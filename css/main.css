@@ -154,6 +154,11 @@ body {
   display: block;
 }
 
+.confetti-wrapper.open #my-canvas {
+  width: 100%;
+  height: 100vh;
+}
+
 .deactivate {
   pointer-events: none;
 }
