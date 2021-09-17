@@ -59,7 +59,12 @@ const game = () => {
     }
     const shuffledCards = () => {
         // shuffle card data
-        const shuffleCards = data.sort(card => 0.5 - Math.random());
+        let shuffleCards;
+        for (let i = 0; i < 10; ++i) {
+          // const shuffleCards =
+          shuffleCards = data.sort(card => 0.5 - Math.random()); 
+        }
+        console.log(shuffleCards)
         // shuffled array
         shuffleCards.forEach((result,index) => {
           // display result
